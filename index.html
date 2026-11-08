@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+
+  <meta charset=  "UTF-8"  >
+  <meta name=  "viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>TestMe - اختيار القسم</title>
+  <link rel=  "stylesheet"   href  ="style.css" >
+
+
+</head>
+<body>
+  <header>
+    
+    <img src="logo.png" alt="شعار TestMe" width="40" height="40">
+     <span class="brand">TestMe</span>
+
+
+    <button id="lang-btn"
+  onclick="changeLanguage()">
+  English
+
+</button>
+
+
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="categories.html">الأقسام</a>
+      
+    </nav>
+ 
+ 
+   </header>
+
+  <main>
+    <section>
+      <h1>اختر القسم</h1>
+      <p>اختر القسم من القائمة ثم اضغط ابدأ.</p>
+
+      <form action="quiz.html" method="get">
+        <label>القسم:
+<select name="cat" id="cat" > 
+             <option value="general" selected>ثقافة عامة</option>
+            <option value="sports">رياضة</option>
+            <option value="web">برمجة الويب</option>
+            <option value ="mate">رياضيات</option>
+            <option value ="Phy">فيزياء </option>
+          <option value ="chem">كيمياء</option>
+          <option value ="bio">احياء</option>
+          <option value ="sahaba">الصحابة</option>
+          <option value="moh">السيره النبوية </option>
+          
+
+          </select>
+         
+        </label>
+        <input class="btn" type="submit" value="ابدأ">
+      </form>
+    </section>
+  </main>
+<script>
+  function changeLanguage(){
+
+    if (document.documentElement.lang==="ar"){
+      document.documentElement.lang="en";
+      document.documentElement.dir ="ltr";
+
+      document.getElementById("lang-btn").textContent  = "English";
+
+    } else{ document.documentElement.lang ="ar";
+    document.documentElement.dir="rtl";
+    document.getElementById("lang-btn").textContent  = "English";
+
+      
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* TestMe - ملف CSS الخارجي (External Style Sheet) - مربوط في كل الصفحات */
+
+/* ===== إعدادات الصفحة ===== */
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 13pt;
+  color: #1a1a2e;
+  max-width: 480px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #2f4bff;
+  font-size: 22pt;
+}
+
+h2 {
+  font-size: 16pt;
+}
+
+/* ===== الهيدر والقائمة ===== */
+header {
+  text-align: center;
+  border-bottom: 2px solid #2f4bff;
+  padding-bottom: 10px;
+}
+
+.brand {
+  color: #2f4bff;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+nav a {
+  color: #1a1a2e;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #2f4bff;
+  text-decoration: underline;
+}
+
+/* ===== الفوتر ===== */
+footer {
+  text-align: center;
+  color: gray;
+  border-top: 1px solid #cccccc;
+  margin-top: 30px;
+}
+
+/* ===== الأزرار ===== */
+.btn {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #2f4bff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 14pt;
+  font-weight: bold;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1f33c4;
+}
+
+/* ===== القائمة المنسدلة ===== */
+select {
+  font-size: 13pt;
+  padding: 6px;
+}
+
+/* ===== خيارات الأسئلة ===== */
+.option {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: right;
+  font-family: inherit;
+  font-size: 13pt;
+  background-color: white;
+  border: 2px solid #cccccc;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.option:hover {
+  border-color: #2f4bff;
+}
+
+.correct {
+  background-color: #c8f0d5;
+  border-color: green;
+}
+
+.wrong {
+  background-color: #f7c9c6;
+  border-color: red;
+}

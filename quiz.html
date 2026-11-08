@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TestMe - الاختبار</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header>
+    <img src="logo.png" alt="شعار TestMe" width="40" height="40">
+    <span class="brand">TestMe</span>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="categories.html">الأقسام</a>
+      <!--<a href="progemer.web.html">الشرح</a>-->
+    </nav>
+  </header>
+
+  <main>
+    <h1>الاختبار</h1>
+
+    <!-- هنا تظهر الأسئلة والاختيارات -->
+    <section id="quiz">
+      <p id="question-number"></p>
+      <h2 id="question-text"></h2>
+      <div id="options"></div>
+
+      <!-- يظهر زر التالي بعد اختيار الإجابة -->
+      <button class="btn" id="next-btn" type="button">
+        التالي
+      </button>
+    </section>
+
+    <!-- النتيجة مخفية حتى ينتهي الاختبار -->
+    <section id="result" style="display: none;">
+      <h2>خلصت الاختبار 🎉</h2>
+
+      <!-- عرض الدرجة -->
+      <p id="score-text"></p>
+
+      <!-- عرض الرسالة التشجيعية -->
+      <p id="motivation-text"></p>
+
+      <a class="btn" href="categories.html">
+        رجوع للأقسام
+      </a>
+    </section>
+  </main>
+
+
+  <!-- ربط JavaScript بعد عناصر الصفحة -->
+  <script src="script.js"></script>
+</body>
+</html>
